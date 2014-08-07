@@ -17,8 +17,25 @@
     <!-- Custom CSS -->
     <style>
     body {
-        padding-top: 70px;
+        padding-top: 10px;
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+        #column1-wrap {
+            float: left;
+            width: 100%;
+        }
+        #column1 {
+            background-color: cyan;
+            margin-right: 200px;
+        }
+        #column2 {
+            background-color: lime;
+            float: left;
+            width: 200px;
+            margin-left: -200px;
+        }
+        #clear {
+            clear: both;
+        }
     }
     </style>
 
@@ -34,9 +51,9 @@
 <body>
 
     <!-- Navigation -->
+    <!--
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -46,10 +63,10 @@
                 </button>
                 <a class="navbar-brand" href="#">Bike In Bloom</a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
+
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!--
+
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -59,21 +76,23 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
-                    -->
+
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
 
+    </nav>
+    --> 
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>#BikeInBloom: Retrospective</h1>
                 <p class="lead"></p>
+                 <img style="border: none;" SRC="img/BikeInBloomHeader.png" ALT="cabi bikeinbloom header">
+                 <br><br>
+
+                 <p>The <a href="http://www.capitalbikeshare.com/news/2014/03/20/find-bikeinbloom-win-stuff">Bike In Bloom</a> was a single limited edition pink <a href="http://greatergreaterwashington.org/post/19731/ggw-on-the-road-chicagos-unicorn-bike/">"unicorn" bike</a> in the <a href="http://capitalbikeshare.com/">Capital Bikeshare</a> system that was available between March 20, 2014 to April 13, 2014 to celebrate the <a href="https://en.wikipedia.org/wiki/National_Cherry_Blossom_Festival">National Cherry Blossom Festival</a> in the District of Columbia</p>
 
                 <iframe width='100%' height='500' frameborder='0' src='http://justgrimes.cartodb.com/viz/dfd4797c-1db1-11e4-a8b0-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1%7C1&sql=&sw_lat=38.8635035952425&sw_lon=-77.18994140625&ne_lat=38.958340924837714&ne_lon=-76.88404083251953' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
@@ -87,24 +106,60 @@
                     });
                     feed.run();
                 </script>
-                <div>
-                    <div id="instafeed"></div>
 
-                    <div>
+
+                <div id="column1-wrap">
+                    <div id="column1"><div id="instafeed"></div></div>
+                </div>
+                <div id="column2"><div>
                         <a class="twitter-timeline" href="https://twitter.com/hashtag/bikeinbloom" data-widget-id="496849516897656832">#bikeinbloom Tweets</a>
                         
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
+                    </div></div>
+                <div id="clear"></div>
+
                 </div>
 
-                <div>
-                <h1>#bikeinbloom stats</h1>
+                <div align=left>
+                <h1>Interesting #bikeinbloom stats</h1>
                 <p>
-                209 unique trips; 114 unique stations
+                <b>209 unique trips between 3/20 and 4/13</b>
+                <br><br>
+                <b>Appeared in 114 unique stations (out of 326 stations)</b>
+                <br><br>
+                <b>$132 dollars earned; Most expensive trips was $30</b>
+                <br><br>
+                <b>Total Activity Duration: 2 days 12 hours 54 minutes 33 seconds </b><i>or 3655 minutes; 219273 seconds; 60.91 hours; 2.538 days</i>
+                <br><br>
+                <b>Average trip duration 17 minutes, 29 seconds</b>
+                <br><br>
+                <b>Longest trip duration 2 hours, 34 minutes, 14 seconds</b>
+                <br><br>
+                <b>Shortest trip duration 2 seconds</b>
+                <br><br>
+                <b>7 times rebalanced/moved</b>
+                <br><br>
+                <b>Only 6 repeat trips, only 2 non-circular trips</b>
+                <br><br>
+
+                <b>10 Most Popular stations</b>
+                <ul>
+                    <li>10th St & Constitution Ave NW <b>[7]</b>
+                    <li>14th & V St NW <b>[6]</b>
+                    <li>Jefferson Memorial <b>[6]</b>
+                    <li>11th & Kenyon St NW <b>[5]</b>
+                    <li>15th & Euclid St  NW <b>[5]</b>
+                    <li>USDA / 12th & Independence Ave SW <b>[5]</b>
+                    <li>11th & F St NW <b>[4]</b>
+                    <li>14th & G St NW <b>[4]</b>
+                    <li>15th & East Capitol St NE <b>[4]</b>
+                    <li>Constitution Ave & 2nd St NW/DOL <b>[4]</b>
+                    <li>Crystal City Metro / 18th & Bell St <b>[4]</b>
+                    <li>Jefferson Dr & 14th St SW <b>[4]</b>
+                    <li>Thomas Circle <b>[4]</b>
+                </ul>
                 <br>
-                Only 6 repeat trips, only 2 non-circular trips
-                <br>
-                <div>
+                <b>Most Popular Trips (more than one trip)</b>
                 <ul>
                     <li>USDA / 12th & Independence Ave SW to USDA / 12th & Independence Ave SW
                     <li>11th & Kenyon St NW to 11th & Kenyon St NW
@@ -113,41 +168,12 @@
                     <li>15th & Euclid St  NW to 15th & Euclid St  NW
                     <li>4th & E St SW to Smithsonian / Jefferson Dr & 12th St SW
                 </ul>
-                </div>
-                <br>
                 
                 <br>
-                $132 dollars earned
+            
+                
                 <br>
-                Most expensive trips was $30
-                <br>
-                Total Duration: 2 days 12 hours 54 minutes 33 seconds
-                <br>
-                or 3655 minutes; 219273 seconds; 60.91 hours; 2.538 days
-                <br>
-                Average trip duration 17 minutes, 29 seconds
-                <br>
-                Longest trip duration 2 hours, 34 minutes, 14 seconds
-                <br>
-                Shortest trip duration 2 seconds
-                <br>
-                7 times rebalanced/moved
-                <br>
-                Top 10 Stations
 
-                10th St & Constitution Ave NW   7
-                14th & V St NW  6
-                Jefferson Memorial  6
-                11th & Kenyon St NW 5
-                15th & Euclid St  NW    5
-                USDA / 12th & Independence Ave SW   5
-                11th & F St NW  4
-                14th & G St NW  4
-                15th & East Capitol St NE   4
-                Constitution Ave & 2nd St NW/DOL    4
-                Crystal City Metro / 18th & Bell St 4
-                Jefferson Dr & 14th St SW   4
-                Thomas Circle   4
                 </p>
                 <a href="img/days.png"><img style="border: none;" SRC="img/days.png" width="700px" ALT="days chart"></a>
                 </div>
