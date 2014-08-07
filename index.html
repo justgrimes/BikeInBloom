@@ -49,6 +49,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
+                    <!--
                     <li>
                         <a href="#">About</a>
                     </li>
@@ -58,6 +59,7 @@
                     <li>
                         <a href="#">Contact</a>
                     </li>
+                    -->
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -70,12 +72,30 @@
 
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>A Bootstrap Starter Template</h1>
-                <p class="lead">Complete with pre-defined file paths that you won't have to change!</p>
-                <ul class="list-unstyled">
-                    <li>Bootstrap v3.2.0</li>
-                    <li>jQuery v1.11.0</li>
-                </ul>
+                <h1>#BikeInBloom: Retrospective</h1>
+                <p class="lead"></p>
+
+                <iframe width='100%' height='500' frameborder='0' src='http://justgrimes.cartodb.com/viz/dfd4797c-1db1-11e4-a8b0-0e10bcd91c2b/embed_map?title=false&description=false&search=false&shareable=false&cartodb_logo=true&layer_selector=false&legends=false&scrollwheel=true&fullscreen=true&sublayer_options=1%7C1&sql=&sw_lat=38.8635035952425&sw_lon=-77.18994140625&ne_lat=38.958340924837714&ne_lon=-76.88404083251953' allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+
+                <script type="text/javascript" src="instafeed.min.js"></script>
+                <script type="text/javascript">
+                    var feed = new Instafeed({
+                        get: 'tagged',
+                        tagName: 'bikeinbloom',
+                        clientId: '5c581c14c50549c4b674b9d644aa6c6f',
+                        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+                    });
+                    feed.run();
+                </script>
+
+                <div id="instafeed"></div>
+
+                <a class="twitter-timeline" href="https://twitter.com/hashtag/bikeinbloom" data-widget-id="496849516897656832">#bikeinbloom Tweets</a>
+                
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <div>
+                <p>#bikeinbloom stats</p>
+                </div>
             </div>
         </div>
         <!-- /.row -->
